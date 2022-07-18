@@ -1,0 +1,12 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "excludePrivate": true,
+  "includeVersion": true,
+  "out": "docs/",
+  "entryPointStrategy": "packages",
+  "includes": "packages/",
+  "readme": "./README.md",
+  "name": "XCoin TypeScript SDK",
+  "gaID": "G-W3YRJ15T8J",
+  "cname": "xcoin.aptos.is"
+}
