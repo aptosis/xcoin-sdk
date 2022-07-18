@@ -10,5 +10,5 @@
   "compilerOptions": {
     "lib": ["DOM", "ES2019"]
   },
-  "references": [{ "path": "packages/faucet/" }]
+  "references": [{ "path": "packages/xcoin/" }]
 }
