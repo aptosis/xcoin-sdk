@@ -32,7 +32,7 @@
   "scripts": {
     "build": "yarn workspaces foreach --exclude workspace -vpti --topological-dev run build",
     "publish:all": "yarn workspaces foreach --exclude workspace -vpti --topological-dev npm publish",
-    "docs:generate": "typedoc --excludePrivate --includeVersion --out docs/ --entryPointStrategy packages --includes packages/ $(find ./packages -mindepth 1 -maxdepth 1 | grep -v browserslist)",
+    "docs:generate": "typedoc .",
     "bump": "yarn workspaces foreach -t version",
     "test": "jest --passWithNoTests",
     "lint": "eslint . --cache",
