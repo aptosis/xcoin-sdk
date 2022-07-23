@@ -33,7 +33,7 @@
     "url": "https://github.com/aptosis/xcoin-sdk/issues"
   },
   "dependencies": {
-    "@movingco/prelude": "^0.1.56",
+    "@movingco/prelude": "^0.2.0",
     "tslib": "^2.4.0"
   },
   "devDependencies": {

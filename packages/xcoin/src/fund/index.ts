@@ -18,6 +18,7 @@ export type FundAccountArgs = {
 };
 
 export * as entry from "./entry.js";
+export * as entryNames from "./entryNames.js";
 export { idl } from "./idl.js";
 export * as payloads from "./payloads.js";
 

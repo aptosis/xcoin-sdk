@@ -1,5 +1,5 @@
 /**
- * xcoin is a series of eXtensions to [AptosFramework::Coin].
+ * xcoin is a series of eXtensions to [aptos_framework::coin].
  *
  * - `xcoin::fund` creates an account if it doesn't exist before transferring `TestCoin`.
  * - `xcoin::xfer` allows transferring Coins to users that may not have an account.
@@ -10,13 +10,15 @@
  */
 import type * as p from "@movingco/prelude";
 
-export type SelfResourcesData = {
+/** Type name: `0x69718ef82997b31b7c1612cbc6b7eb0e3224897e631506d9675888b71f0c775a::xcoin::SelfResources` */
+export interface ISelfResources {
   signer_cap: {
     account: p.RawAddress;
   };
-};
+}
 
 export * as entry from "./entry.js";
+export * as entryNames from "./entryNames.js";
 export { idl } from "./idl.js";
 export * as payloads from "./payloads.js";
 
@@ -82,7 +84,7 @@ const moduleImpl = {
 } as const;
 
 /**
- * xcoin is a series of eXtensions to [AptosFramework::Coin].
+ * xcoin is a series of eXtensions to [aptos_framework::coin].
  *
  * - `xcoin::fund` creates an account if it doesn't exist before transferring `TestCoin`.
  * - `xcoin::xfer` allows transferring Coins to users that may not have an account.

@@ -30,14 +30,13 @@
     "typescript": "^4.7.4"
   },
   "scripts": {
-    "build": "yarn workspaces foreach --exclude workspace -vpti --topological-dev run build",
+    "build": "tsc --build",
     "publish:all": "yarn workspaces foreach --exclude workspace -vpti --topological-dev npm publish",
     "docs:generate": "typedoc .",
     "bump": "yarn workspaces foreach -t version",
     "test": "jest --passWithNoTests",
     "lint": "eslint . --cache",
     "lint:ci": "eslint . --max-warnings=0",
-    "typecheck": "tsc --build",
     "prepare": "husky install"
   },
   "lint-staged": {

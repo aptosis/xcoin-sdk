@@ -19,7 +19,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@aptosis/xcoin@workspace:packages/xcoin"
   dependencies:
-    "@movingco/prelude": ^0.1.56
+    "@movingco/prelude": ^0.2.0
     "@saberhq/tsconfig": ^2.0.3
     jsbi: ^4.3.0
     tslib: ^2.4.0
@@ -804,11 +804,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@movingco/core@npm:^0.1.56":
-  version: 0.1.56
-  resolution: "@movingco/core@npm:0.1.56"
+"@movingco/core@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "@movingco/core@npm:0.2.0"
   dependencies:
-    "@movingco/sha3": ^0.1.55
+    "@movingco/hexstring": ^0.2.0
+    "@movingco/sha3": ^0.2.0
     "@saberhq/option-utils": ^1.13.32
     "@ubeswap/token-math": ^5.2.0
     buffer: ^6.0.3
@@ -816,54 +817,63 @@ __metadata:
     tslib: ^2.4.0
   peerDependencies:
     jsbi: ^4.3.0
-  checksum: 92323c5c73693df3e126782a378cc9985a9cd504a62f605683f7d9bbdb1e67af05a3916c8685a9aaa661f70de9429bfbb9f8da82c9408137f405238460a94676
+  checksum: 88a0a805e88941e4cc25ce60f0f3d45b7121e04562bc890932b6f9394ecedca0b639b380bcc7ce9dd554eab30ca621ca5965bb906a422cd05b18e889abe980e8
   languageName: node
   linkType: hard
 
-"@movingco/idl@npm:^0.1.56":
-  version: 0.1.56
-  resolution: "@movingco/idl@npm:0.1.56"
+"@movingco/hexstring@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "@movingco/hexstring@npm:0.2.0"
+  dependencies:
+    buffer: ^6.0.3
+    tiny-invariant: ^1.2.0
+    tslib: ^2.4.0
+  checksum: 4cc2681d814d66b5feef73f76d77d52a0eabb236547f22219a0c1f36daea51d9e1d3e99d3bc45331c7576f6b20750f523edaf57f554d359eb73598f58974df66
+  languageName: node
+  linkType: hard
+
+"@movingco/idl@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "@movingco/idl@npm:0.2.0"
   dependencies:
     tiny-invariant: ^1.2.0
     tslib: ^2.4.0
   peerDependencies:
     jsbi: ^4.3.0
-  checksum: 58908051b464714d26f19ba9e0571cf10dfe79edbd4901a5b468bbbbe2d55fd32907fdcc4b328d574c89e87a405b5691be42093147e158efd015294c56c5ede4
+  checksum: e09af730bab72d7da51a65b65a37bea005cc59f274c5db9982d5dd273782f5095d820e45b0f3634f63c2dd4acb64b4c4eea8cbc17616a49773dba3f894d285b5
   languageName: node
   linkType: hard
 
-"@movingco/move-types@npm:^0.1.55":
-  version: 0.1.55
-  resolution: "@movingco/move-types@npm:0.1.55"
+"@movingco/move-types@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "@movingco/move-types@npm:0.2.0"
   dependencies:
-    tiny-invariant: ^1.2.0
     tslib: ^2.4.0
-  checksum: 389246c2c9112c84e2e9338d0e71468842f8784e232ad55fe778d2f636295f32c81e24be5594d8bb06929eba196c2ec0d3fed1e14b1b33dc50334a803de5c20b
+  checksum: b265e978f252775ab9b6ecbb7fc41e904fab26ba7a2f842580dbe842feb80c5b1136c32bdec698743d57d1e6861bf497a56bb6a1475f1d5f800f1f00fbc9659a
   languageName: node
   linkType: hard
 
-"@movingco/prelude@npm:^0.1.56":
-  version: 0.1.56
-  resolution: "@movingco/prelude@npm:0.1.56"
+"@movingco/prelude@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "@movingco/prelude@npm:0.2.0"
   dependencies:
-    "@movingco/core": ^0.1.56
-    "@movingco/idl": ^0.1.56
-    "@movingco/move-types": ^0.1.55
-    tslib: ^2.4.0
-  peerDependencies:
+    "@movingco/core": ^0.2.0
+    "@movingco/idl": ^0.2.0
+    "@movingco/move-types": ^0.2.0
     jsbi: ^4.3.0
-  checksum: 61f390c301301093d159c176c0d9eaadcc67adb2b7a7e9d75f372d699f12acca559e57efbafc49cbb0e42a88d088f114babdd43c7df8e2dde6e67e9bd4832438
+    tslib: ^2.4.0
+  checksum: d5cbf1e3df6c94579ca3e9e52e7b990ac4a1c2ede7732706319a9b0d7d8655ba2ee4944404465efa89a3f1878ca0f467705da2ce9d11ccbc0c3142888ef092e6
   languageName: node
   linkType: hard
 
-"@movingco/sha3@npm:^0.1.55":
-  version: 0.1.55
-  resolution: "@movingco/sha3@npm:0.1.55"
+"@movingco/sha3@npm:^0.2.0":
+  version: 0.2.0
+  resolution: "@movingco/sha3@npm:0.2.0"
   dependencies:
     js-sha3: ^0.8.0
     tiny-invariant: ^1.2.0
     tslib: ^2.4.0
-  checksum: 849f141b311c123b2a7aa7644d1142d4f7a1249e571f6fc79a165b8be81c6af6465eab761d37727caec24c5c65c99c2cb79f0a45a9b22f4a90b6b256cad91a3e
+  checksum: de05631e75c3716aa366cd62354d6eb4819bfff3800f3e985f02c709fb79eb7dafb27d7841f9b90627eadd68741c42e4ce540342d0908df6154c590c1a020d51
   languageName: node
   linkType: hard
 

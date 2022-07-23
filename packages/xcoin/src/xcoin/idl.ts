@@ -7,7 +7,7 @@
 export const idl = {
   module_id:
     "0x69718ef82997b31b7c1612cbc6b7eb0e3224897e631506d9675888b71f0c775a::xcoin",
-  doc: "xcoin is a series of eXtensions to [AptosFramework::Coin].\n\n- `xcoin::fund` creates an account if it doesn't exist before transferring `TestCoin`.\n- `xcoin::xfer` allows transferring Coins to users that may not have an account.",
+  doc: "xcoin is a series of eXtensions to [aptos_framework::coin].\n\n- `xcoin::fund` creates an account if it doesn't exist before transferring `TestCoin`.\n- `xcoin::xfer` allows transferring Coins to users that may not have an account.",
   functions: [
     {
       name: "initialize",
@@ -22,7 +22,7 @@ export const idl = {
       fields: [
         {
           name: "signer_cap",
-          ty: { struct: { name: "0x1::Account::SignerCapability" } },
+          ty: { struct: { name: "0x1::account::SignerCapability" } },
         },
       ],
       abilities: ["key"],

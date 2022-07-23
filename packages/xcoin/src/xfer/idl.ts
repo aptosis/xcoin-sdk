@@ -45,7 +45,7 @@ export const idl = {
           doc: "A Table of pending transfers.",
           ty: {
             struct: {
-              name: "0x1::Table::Table",
+              name: "0x1::table::Table",
               ty_args: [
                 "u64",
                 {
@@ -76,7 +76,7 @@ export const idl = {
           doc: "A Table of `recipient` -> `inbox` address.",
           ty: {
             struct: {
-              name: "0x1::Table::Table",
+              name: "0x1::table::Table",
               ty_args: ["address", "address"],
             },
           },
@@ -91,7 +91,7 @@ export const idl = {
         {
           name: "signer_cap",
           doc: "A Table of `recipient` -> `inbox` address.",
-          ty: { struct: { name: "0x1::Account::SignerCapability" } },
+          ty: { struct: { name: "0x1::account::SignerCapability" } },
         },
       ],
       abilities: ["key"],
@@ -109,7 +109,7 @@ export const idl = {
           name: "amount",
           doc: "Amount of coins transferred.",
           ty: {
-            struct: { name: "0x1::Coin::Coin", ty_args: [{ type_param: 0 }] },
+            struct: { name: "0x1::coin::Coin", ty_args: [{ type_param: 0 }] },
           },
         },
         {

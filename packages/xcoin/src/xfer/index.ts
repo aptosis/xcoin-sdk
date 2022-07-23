@@ -22,8 +22,10 @@ import type * as p from "@movingco/prelude";
 /**
  * An inbox holds the incoming `Transfer`s to a given address.
  * Inboxes are stored on a resource account.
+ *
+ * Type name: `0x69718ef82997b31b7c1612cbc6b7eb0e3224897e631506d9675888b71f0c775a::xfer::Inbox`
  */
-export type InboxData = {
+export interface IInbox {
   /** A Table of pending transfers. */
   pending: {
     handle: p.U128;
@@ -35,27 +37,39 @@ export type InboxData = {
    * This is also the next unused index of the inbox.
    */
   size: p.U64;
-};
+}
 
-/** A mapping of addresses to their inbox. */
-export type InboxMappingData = {
+/**
+ * A mapping of addresses to their inbox.
+ *
+ * Type name: `0x69718ef82997b31b7c1612cbc6b7eb0e3224897e631506d9675888b71f0c775a::xfer::InboxMapping`
+ */
+export interface IInboxMapping {
   /** A Table of `recipient` -> `inbox` address. */
   addresses: {
     handle: p.U128;
     length: p.U64;
   };
-};
+}
 
-/** Metadata about an inbox account. */
-export type InboxMetaData = {
+/**
+ * Metadata about an inbox account.
+ *
+ * Type name: `0x69718ef82997b31b7c1612cbc6b7eb0e3224897e631506d9675888b71f0c775a::xfer::InboxMeta`
+ */
+export interface IInboxMeta {
   /** A Table of `recipient` -> `inbox` address. */
   signer_cap: {
     account: p.RawAddress;
   };
-};
+}
 
-/** A transfer of coins. */
-export type TransferData = {
+/**
+ * A transfer of coins.
+ *
+ * Type name: `0x69718ef82997b31b7c1612cbc6b7eb0e3224897e631506d9675888b71f0c775a::xfer::Transfer`
+ */
+export interface ITransfer {
   /** The address which initiated this transfer. */
   creator: p.RawAddress;
 
@@ -67,7 +81,7 @@ export type TransferData = {
 
   /** If coins are not accepted by this time, the transfer may be cancelled. */
   deadline: p.U64;
-};
+}
 
 /** Payload arguments for {@link entry.accept}. */
 export type AcceptArgs = {
@@ -109,6 +123,7 @@ export type InitiateArgs = {
 };
 
 export * as entry from "./entry.js";
+export * as entryNames from "./entryNames.js";
 export { idl } from "./idl.js";
 export * as payloads from "./payloads.js";
 

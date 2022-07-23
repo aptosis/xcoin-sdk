@@ -10,5 +10,8 @@
   "compilerOptions": {
     "lib": ["DOM", "ES2019"]
   },
-  "references": [{ "path": "packages/xcoin/" }]
+  "references": [
+    { "path": "packages/xcoin/" },
+    { "path": "packages/xcoin/tsconfig.cjs.json" }
+  ]
 }
